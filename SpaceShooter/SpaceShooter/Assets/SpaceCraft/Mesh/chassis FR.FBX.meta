@@ -1,0 +1,313 @@
+fileFormatVersion: 2
+guid: 2e260717757b6d74aa28af78e47e6cfd
+timeCreated: 1508689744
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Box27
+    100002: Box28
+    100004: //RootNode
+    100006: Cylinder1429
+    100008: Cylinder1430
+    100010: Cylinder1435
+    100012: Cylinder1436
+    100014: Cylinder1437
+    100016: Cylinder1438
+    100018: Line46
+    100020: Line51
+    100022: Line53
+    100024: Line54
+    100026: Line55
+    100028: Object25
+    100030: Object41
+    100032: Object46
+    100034: Object60
+    100036: Object67
+    100038: Object27
+    100040: Object98
+    400000: Box27
+    400002: Box28
+    400004: //RootNode
+    400006: Cylinder1429
+    400008: Cylinder1430
+    400010: Cylinder1435
+    400012: Cylinder1436
+    400014: Cylinder1437
+    400016: Cylinder1438
+    400018: Line46
+    400020: Line51
+    400022: Line53
+    400024: Line54
+    400026: Line55
+    400028: Object25
+    400030: Object41
+    400032: Object46
+    400034: Object60
+    400036: Object67
+    400038: Object27
+    400040: Object98
+    2300000: Box27
+    2300002: Box28
+    2300004: Cylinder1429
+    2300006: Cylinder1430
+    2300008: Cylinder1435
+    2300010: Cylinder1436
+    2300012: Cylinder1437
+    2300014: Cylinder1438
+    2300016: Line46
+    2300018: Line51
+    2300020: Line53
+    2300022: Line54
+    2300024: Line55
+    2300026: Object25
+    2300028: Object41
+    2300030: Object46
+    2300032: Object60
+    2300034: Object67
+    2300036: Object27
+    2300038: Object98
+    3300000: Box27
+    3300002: Box28
+    3300004: Cylinder1429
+    3300006: Cylinder1430
+    3300008: Cylinder1435
+    3300010: Cylinder1436
+    3300012: Cylinder1437
+    3300014: Cylinder1438
+    3300016: Line46
+    3300018: Line51
+    3300020: Line53
+    3300022: Line54
+    3300024: Line55
+    3300026: Object25
+    3300028: Object41
+    3300030: Object46
+    3300032: Object60
+    3300034: Object67
+    3300036: Object27
+    3300038: Object98
+    4300000: Box28
+    4300002: Line55
+    4300004: Box27
+    4300006: Cylinder1438
+    4300008: Line53
+    4300010: Line54
+    4300012: Line46
+    4300014: Cylinder1429
+    4300016: Cylinder1430
+    4300018: Object25
+    4300020: Object60
+    4300022: Object67
+    4300024: Object41
+    4300026: Object46
+    4300028: Line51
+    4300030: Cylinder1435
+    4300032: Cylinder1436
+    4300034: Cylinder1437
+    4300036: Object27
+    4300038: Object98
+    7400000: eject
+    7400002: off
+    9500000: //RootNode
+    11100000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 0
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 1
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: eject
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 90
+      wrapMode: 1
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Box27
+        weight: 1
+      - path: Box27/Cylinder1438
+        weight: 1
+      - path: Box27/Line53
+        weight: 1
+      - path: Box27/Line53/Line54
+        weight: 1
+      - path: Box28
+        weight: 1
+      - path: Box28/Line55
+        weight: 1
+      - path: Line46
+        weight: 1
+      - path: Line46/Cylinder1429
+        weight: 1
+      - path: Line46/Cylinder1429/Cylinder1430
+        weight: 1
+      - path: Line46/Cylinder1429/Cylinder1430/Object25
+        weight: 1
+      - path: Line46/Cylinder1429/Cylinder1430/Object25/Object60
+        weight: 1
+      - path: Line46/Cylinder1429/Cylinder1430/Object25/Object67
+        weight: 1
+      - path: Line46/Cylinder1429/Cylinder1430/Object41
+        weight: 1
+      - path: Line46/Cylinder1429/Cylinder1430/Object41/Object46
+        weight: 1
+      - path: Line46/Cylinder1429/Line51
+        weight: 1
+      - path: Line46/Cylinder1429/Line51/Cylinder1435
+        weight: 1
+      - path: Line46/Cylinder1429/Line51/Cylinder1435/Cylinder1436
+        weight: 1
+      - path: Line46/Cylinder1429/Line51/Cylinder1437
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: off
+      takeName: Take 001
+      firstFrame: 90
+      lastFrame: 180
+      wrapMode: 1
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Box27
+        weight: 1
+      - path: Box27/Cylinder1438
+        weight: 1
+      - path: Box27/Line53
+        weight: 1
+      - path: Box27/Line53/Line54
+        weight: 1
+      - path: Box28
+        weight: 1
+      - path: Box28/Line55
+        weight: 1
+      - path: Line46
+        weight: 1
+      - path: Line46/Cylinder1429
+        weight: 1
+      - path: Line46/Cylinder1429/Cylinder1430
+        weight: 1
+      - path: Line46/Cylinder1429/Cylinder1430/Object25
+        weight: 1
+      - path: Line46/Cylinder1429/Cylinder1430/Object25/Object60
+        weight: 1
+      - path: Line46/Cylinder1429/Cylinder1430/Object25/Object67
+        weight: 1
+      - path: Line46/Cylinder1429/Cylinder1430/Object41
+        weight: 1
+      - path: Line46/Cylinder1429/Cylinder1430/Object41/Object46
+        weight: 1
+      - path: Line46/Cylinder1429/Line51
+        weight: 1
+      - path: Line46/Cylinder1429/Line51/Cylinder1435
+        weight: 1
+      - path: Line46/Cylinder1429/Line51/Cylinder1435/Cylinder1436
+        weight: 1
+      - path: Line46/Cylinder1429/Line51/Cylinder1437
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

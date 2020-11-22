@@ -1,0 +1,276 @@
+fileFormatVersion: 2
+guid: ca28469406fa81d4c817809ede4c2782
+timeCreated: 1508676528
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Plane01
+    100004: Plane20
+    100006: Plane21
+    100008: Plane22
+    100010: Plane23
+    100012: Plane24
+    100014: Plane25
+    100016: Plane26
+    100018: Plane27
+    100020: Plane28
+    100022: Plane29
+    100024: Plane30
+    100026: Plane31
+    100028: Plane32
+    100030: Plane33
+    100032: Plane34
+    100034: Plane35
+    100036: Plane36
+    100038: Group41
+    100040: blades
+    400000: //RootNode
+    400002: Plane01
+    400004: Plane20
+    400006: Plane21
+    400008: Plane22
+    400010: Plane23
+    400012: Plane24
+    400014: Plane25
+    400016: Plane26
+    400018: Plane27
+    400020: Plane28
+    400022: Plane29
+    400024: Plane30
+    400026: Plane31
+    400028: Plane32
+    400030: Plane33
+    400032: Plane34
+    400034: Plane35
+    400036: Plane36
+    400038: Group41
+    400040: blades
+    2300000: Plane01
+    2300002: Plane20
+    2300004: Plane21
+    2300006: Plane22
+    2300008: Plane23
+    2300010: Plane24
+    2300012: Plane25
+    2300014: Plane26
+    2300016: Plane27
+    2300018: Plane28
+    2300020: Plane29
+    2300022: Plane30
+    2300024: Plane31
+    2300026: Plane32
+    2300028: Plane33
+    2300030: Plane34
+    2300032: Plane35
+    2300034: Plane36
+    2300036: blades
+    3300000: Plane01
+    3300002: Plane20
+    3300004: Plane21
+    3300006: Plane22
+    3300008: Plane23
+    3300010: Plane24
+    3300012: Plane25
+    3300014: Plane26
+    3300016: Plane27
+    3300018: Plane28
+    3300020: Plane29
+    3300022: Plane30
+    3300024: Plane31
+    3300026: Plane32
+    3300028: Plane33
+    3300030: Plane34
+    3300032: Plane35
+    3300034: Plane36
+    3300036: blades
+    4300000: Plane01
+    4300002: Plane20
+    4300004: Plane21
+    4300006: Plane22
+    4300008: Plane23
+    4300010: Plane24
+    4300012: Plane25
+    4300014: Plane26
+    4300016: Plane27
+    4300018: Plane28
+    4300020: Plane29
+    4300022: Plane30
+    4300024: Plane31
+    4300026: Plane32
+    4300028: Plane33
+    4300030: Plane34
+    4300032: Plane35
+    4300034: Plane36
+    4300036: blades
+    7400000: fast rotation
+    7400002: slow rotation
+    9500000: //RootNode
+    11100000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 2
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: fast rotation
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Plane01
+        weight: 1
+      - path: Plane20
+        weight: 1
+      - path: Plane21
+        weight: 1
+      - path: Plane22
+        weight: 1
+      - path: Plane23
+        weight: 1
+      - path: Plane24
+        weight: 1
+      - path: Plane25
+        weight: 1
+      - path: Plane26
+        weight: 1
+      - path: Plane27
+        weight: 1
+      - path: Plane28
+        weight: 1
+      - path: Plane29
+        weight: 1
+      - path: Plane30
+        weight: 1
+      - path: Plane31
+        weight: 1
+      - path: Plane32
+        weight: 1
+      - path: Plane33
+        weight: 1
+      - path: Plane34
+        weight: 1
+      - path: Plane35
+        weight: 1
+      - path: Plane36
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: slow rotation
+      takeName: Take 001
+      firstFrame: 30
+      lastFrame: 150
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: blades
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

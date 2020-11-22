@@ -1,0 +1,588 @@
+fileFormatVersion: 2
+guid: b8146f2461875564cbc142f62bb053a8
+timeCreated: 1508692165
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Box25
+    100002: Box26
+    100004: Box39
+    100006: Box40
+    100008: //RootNode
+    100010: Cylinder1400
+    100012: Cylinder1401
+    100014: Cylinder1402
+    100016: Cylinder1403
+    100018: Cylinder1404
+    100020: Cylinder1405
+    100022: Cylinder1406
+    100024: Cylinder1407
+    100026: Cylinder1408
+    100028: Cylinder1409
+    100030: Cylinder1410
+    100032: Cylinder1411
+    100034: Cylinder1412
+    100036: Cylinder1413
+    100038: Cylinder1414
+    100040: Cylinder1416
+    100042: Cylinder1417
+    100044: Cylinder1418
+    100046: Cylinder1421
+    100048: Cylinder1422
+    100050: Cylinder1454
+    100052: Cylinder1455
+    100054: Cylinder1459
+    100056: Line33
+    100058: Line34
+    100060: Line35
+    100062: Line36
+    100064: Line37
+    100066: Line38
+    100068: Line39
+    100070: Line40
+    100072: Line41
+    100074: Line42
+    100076: Line44
+    100078: Object01      118
+    100080: Object37
+    100082: Object38
+    100084: Object39
+    100086: Object40
+    100088: Object42
+    100090: Object43
+    100092: Object44
+    100094: Object45
+    100096: Object72
+    100098: Object81
+    100100: Object82
+    100102: Object83
+    400000: Box25
+    400002: Box26
+    400004: Box39
+    400006: Box40
+    400008: //RootNode
+    400010: Cylinder1400
+    400012: Cylinder1401
+    400014: Cylinder1402
+    400016: Cylinder1403
+    400018: Cylinder1404
+    400020: Cylinder1405
+    400022: Cylinder1406
+    400024: Cylinder1407
+    400026: Cylinder1408
+    400028: Cylinder1409
+    400030: Cylinder1410
+    400032: Cylinder1411
+    400034: Cylinder1412
+    400036: Cylinder1413
+    400038: Cylinder1414
+    400040: Cylinder1416
+    400042: Cylinder1417
+    400044: Cylinder1418
+    400046: Cylinder1421
+    400048: Cylinder1422
+    400050: Cylinder1454
+    400052: Cylinder1455
+    400054: Cylinder1459
+    400056: Line33
+    400058: Line34
+    400060: Line35
+    400062: Line36
+    400064: Line37
+    400066: Line38
+    400068: Line39
+    400070: Line40
+    400072: Line41
+    400074: Line42
+    400076: Line44
+    400078: Object01      118
+    400080: Object37
+    400082: Object38
+    400084: Object39
+    400086: Object40
+    400088: Object42
+    400090: Object43
+    400092: Object44
+    400094: Object45
+    400096: Object72
+    400098: Object81
+    400100: Object82
+    400102: Object83
+    2300000: Box25
+    2300002: Box26
+    2300004: Box39
+    2300006: Box40
+    2300008: Cylinder1400
+    2300010: Cylinder1401
+    2300012: Cylinder1402
+    2300014: Cylinder1403
+    2300016: Cylinder1404
+    2300018: Cylinder1405
+    2300020: Cylinder1406
+    2300022: Cylinder1407
+    2300024: Cylinder1408
+    2300026: Cylinder1409
+    2300028: Cylinder1410
+    2300030: Cylinder1411
+    2300032: Cylinder1412
+    2300034: Cylinder1413
+    2300036: Cylinder1414
+    2300038: Cylinder1416
+    2300040: Cylinder1417
+    2300042: Cylinder1418
+    2300044: Cylinder1421
+    2300046: Cylinder1422
+    2300048: Cylinder1454
+    2300050: Cylinder1455
+    2300052: Cylinder1459
+    2300054: Line33
+    2300056: Line34
+    2300058: Line35
+    2300060: Line36
+    2300062: Line37
+    2300064: Line38
+    2300066: Line39
+    2300068: Line40
+    2300070: Line41
+    2300072: Line42
+    2300074: Line44
+    2300076: Object01      118
+    2300078: Object37
+    2300080: Object38
+    2300082: Object39
+    2300084: Object40
+    2300086: Object42
+    2300088: Object43
+    2300090: Object44
+    2300092: Object45
+    2300094: Object72
+    2300096: Object81
+    2300098: Object82
+    2300100: Object83
+    3300000: Box25
+    3300002: Box26
+    3300004: Box39
+    3300006: Box40
+    3300008: Cylinder1400
+    3300010: Cylinder1401
+    3300012: Cylinder1402
+    3300014: Cylinder1403
+    3300016: Cylinder1404
+    3300018: Cylinder1405
+    3300020: Cylinder1406
+    3300022: Cylinder1407
+    3300024: Cylinder1408
+    3300026: Cylinder1409
+    3300028: Cylinder1410
+    3300030: Cylinder1411
+    3300032: Cylinder1412
+    3300034: Cylinder1413
+    3300036: Cylinder1414
+    3300038: Cylinder1416
+    3300040: Cylinder1417
+    3300042: Cylinder1418
+    3300044: Cylinder1421
+    3300046: Cylinder1422
+    3300048: Cylinder1454
+    3300050: Cylinder1455
+    3300052: Cylinder1459
+    3300054: Line33
+    3300056: Line34
+    3300058: Line35
+    3300060: Line36
+    3300062: Line37
+    3300064: Line38
+    3300066: Line39
+    3300068: Line40
+    3300070: Line41
+    3300072: Line42
+    3300074: Line44
+    3300076: Object01      118
+    3300078: Object37
+    3300080: Object38
+    3300082: Object39
+    3300084: Object40
+    3300086: Object42
+    3300088: Object43
+    3300090: Object44
+    3300092: Object45
+    3300094: Object72
+    3300096: Object81
+    3300098: Object82
+    3300100: Object83
+    4300000: Cylinder1401
+    4300002: Cylinder1402
+    4300004: Cylinder1418
+    4300006: Line34
+    4300008: Line35
+    4300010: Cylinder1412
+    4300012: Cylinder1409
+    4300014: Object37
+    4300016: Cylinder1413
+    4300018: Cylinder1416
+    4300020: Object01      118
+    4300022: Object43
+    4300024: Line40
+    4300026: Line44
+    4300028: Object45
+    4300030: Line38
+    4300032: Line39
+    4300034: Object44
+    4300036: Cylinder1421
+    4300038: Cylinder1422
+    4300040: Line42
+    4300042: Line33
+    4300044: Box26
+    4300046: Object42
+    4300048: Object39
+    4300050: Box25
+    4300052: Line41
+    4300054: Cylinder1410
+    4300056: Line36
+    4300058: Line37
+    4300060: Cylinder1408
+    4300062: Cylinder1411
+    4300064: Cylinder1414
+    4300066: Object40
+    4300068: Cylinder1406
+    4300070: Cylinder1404
+    4300072: Cylinder1405
+    4300074: Object72
+    4300076: Cylinder1400
+    4300078: Cylinder1407
+    4300080: Cylinder1403
+    4300082: Object38
+    4300084: Box40
+    4300086: Box39
+    4300088: Cylinder1459
+    4300090: Cylinder1417
+    4300092: Cylinder1454
+    4300094: Cylinder1455
+    4300096: Object81
+    4300098: Object82
+    4300100: Object83
+    7400000: eject
+    7400002: off
+    9500000: //RootNode
+    11100000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 0
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 1
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: eject
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 150
+      wrapMode: 1
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cylinder1401
+        weight: 1
+      - path: Cylinder1402
+        weight: 1
+      - path: Cylinder1402/Cylinder1400
+        weight: 1
+      - path: Cylinder1402/Cylinder1400/Cylinder1407
+        weight: 1
+      - path: Cylinder1402/Cylinder1403
+        weight: 1
+      - path: Cylinder1402/Cylinder1403/Object38
+        weight: 1
+      - path: Cylinder1402/Cylinder1403/Object38/Box39
+        weight: 1
+      - path: Cylinder1402/Cylinder1403/Object38/Box40
+        weight: 1
+      - path: Cylinder1402/Cylinder1418
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Cylinder1406
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Cylinder1406/Cylinder1404
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Cylinder1406/Cylinder1404/Cylinder1405
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Line34
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Line34/Line35
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Line34/Line35/Cylinder1412
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Line34/Line35/Cylinder1412/Cylinder1409
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Line34/Line35/Cylinder1412/Cylinder1409/Cylinder1413
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Line34/Line35/Cylinder1412/Cylinder1409/Cylinder1413/Cylinder1416
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Line34/Line35/Cylinder1412/Cylinder1409/Cylinder1421
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Line34/Line35/Cylinder1412/Cylinder1409/Cylinder1421/Cylinder1422
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Line34/Line35/Cylinder1412/Cylinder1409/Line38
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Line34/Line35/Cylinder1412/Cylinder1409/Line38/Line39
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Line34/Line35/Cylinder1412/Cylinder1409/Object01      118
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Line34/Line35/Cylinder1412/Cylinder1409/Object01      118/Line40
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Line34/Line35/Cylinder1412/Cylinder1409/Object01      118/Line44
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Line34/Line35/Cylinder1412/Cylinder1409/Object01      118/Line44/Object45
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Line34/Line35/Cylinder1412/Cylinder1409/Object01      118/Object43
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Line34/Line35/Cylinder1412/Cylinder1409/Object37
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Line34/Line35/Cylinder1412/Cylinder1409/Object44
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Line34/Line35/Cylinder1412/Line42
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Line34/Line35/Cylinder1412/Line42/Cylinder1408
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Line34/Line35/Cylinder1412/Line42/Cylinder1408/Cylinder1411
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Line34/Line35/Cylinder1412/Line42/Cylinder1408/Cylinder1411/Cylinder1414
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Line34/Line35/Cylinder1412/Line42/Line33
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Line34/Line35/Cylinder1412/Line42/Line33/Box25
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Line34/Line35/Cylinder1412/Line42/Line33/Box25/Cylinder1410
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Line34/Line35/Cylinder1412/Line42/Line33/Box25/Cylinder1410/Line36
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Line34/Line35/Cylinder1412/Line42/Line33/Box25/Cylinder1410/Line36/Line37
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Line34/Line35/Cylinder1412/Line42/Line33/Box25/Line41
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Line34/Line35/Cylinder1412/Line42/Line33/Box26
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Line34/Line35/Cylinder1412/Line42/Line33/Box26/Object39
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Line34/Line35/Cylinder1412/Line42/Line33/Box26/Object42
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Line34/Object40
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Object72
+        weight: 1
+      - path: Cylinder1402/Cylinder1459
+        weight: 1
+      - path: Cylinder1417
+        weight: 1
+      - path: Cylinder1454
+        weight: 1
+      - path: Cylinder1455
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: off
+      takeName: Take 001
+      firstFrame: 150
+      lastFrame: 300
+      wrapMode: 1
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cylinder1401
+        weight: 1
+      - path: Cylinder1402
+        weight: 1
+      - path: Cylinder1402/Cylinder1400
+        weight: 1
+      - path: Cylinder1402/Cylinder1400/Cylinder1407
+        weight: 1
+      - path: Cylinder1402/Cylinder1403
+        weight: 1
+      - path: Cylinder1402/Cylinder1403/Object38
+        weight: 1
+      - path: Cylinder1402/Cylinder1403/Object38/Box39
+        weight: 1
+      - path: Cylinder1402/Cylinder1403/Object38/Box40
+        weight: 1
+      - path: Cylinder1402/Cylinder1418
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Cylinder1406
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Cylinder1406/Cylinder1404
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Cylinder1406/Cylinder1404/Cylinder1405
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Line34
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Line34/Line35
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Line34/Line35/Cylinder1412
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Line34/Line35/Cylinder1412/Cylinder1409
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Line34/Line35/Cylinder1412/Cylinder1409/Cylinder1413
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Line34/Line35/Cylinder1412/Cylinder1409/Cylinder1413/Cylinder1416
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Line34/Line35/Cylinder1412/Cylinder1409/Cylinder1421
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Line34/Line35/Cylinder1412/Cylinder1409/Cylinder1421/Cylinder1422
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Line34/Line35/Cylinder1412/Cylinder1409/Line38
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Line34/Line35/Cylinder1412/Cylinder1409/Line38/Line39
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Line34/Line35/Cylinder1412/Cylinder1409/Object01      118
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Line34/Line35/Cylinder1412/Cylinder1409/Object01      118/Line40
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Line34/Line35/Cylinder1412/Cylinder1409/Object01      118/Line44
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Line34/Line35/Cylinder1412/Cylinder1409/Object01      118/Line44/Object45
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Line34/Line35/Cylinder1412/Cylinder1409/Object01      118/Object43
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Line34/Line35/Cylinder1412/Cylinder1409/Object37
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Line34/Line35/Cylinder1412/Cylinder1409/Object44
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Line34/Line35/Cylinder1412/Line42
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Line34/Line35/Cylinder1412/Line42/Cylinder1408
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Line34/Line35/Cylinder1412/Line42/Cylinder1408/Cylinder1411
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Line34/Line35/Cylinder1412/Line42/Cylinder1408/Cylinder1411/Cylinder1414
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Line34/Line35/Cylinder1412/Line42/Line33
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Line34/Line35/Cylinder1412/Line42/Line33/Box25
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Line34/Line35/Cylinder1412/Line42/Line33/Box25/Cylinder1410
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Line34/Line35/Cylinder1412/Line42/Line33/Box25/Cylinder1410/Line36
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Line34/Line35/Cylinder1412/Line42/Line33/Box25/Cylinder1410/Line36/Line37
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Line34/Line35/Cylinder1412/Line42/Line33/Box25/Line41
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Line34/Line35/Cylinder1412/Line42/Line33/Box26
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Line34/Line35/Cylinder1412/Line42/Line33/Box26/Object39
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Line34/Line35/Cylinder1412/Line42/Line33/Box26/Object42
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Line34/Object40
+        weight: 1
+      - path: Cylinder1402/Cylinder1418/Object72
+        weight: 1
+      - path: Cylinder1402/Cylinder1459
+        weight: 1
+      - path: Cylinder1417
+        weight: 1
+      - path: Cylinder1454
+        weight: 1
+      - path: Cylinder1455
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
