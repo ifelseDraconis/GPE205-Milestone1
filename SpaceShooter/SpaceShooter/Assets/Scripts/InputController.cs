@@ -7,7 +7,7 @@ public class InputController : MonoBehaviour
     private TankData thisShipData;
     public enum InputScheme { WASD, arrowKeys};
     public InputScheme entryMethod = InputScheme.WASD;
-    private CharacterController thisController;
+
 
     private float thisPlayerForwardSpeed;
     private float thisPlayerBackSpeed;
@@ -21,6 +21,8 @@ public class InputController : MonoBehaviour
     private Vector3 controlInput;
     private Vector3 rotateInput;
 
+    private TankController thisJoystick;
+
     private float lastFired;
     private float fireRate;
 
@@ -28,18 +30,17 @@ public class InputController : MonoBehaviour
     void Start()
     {
         thisShipData = GetComponent<TankData>();
-        thisController = GetComponent<CharacterController>();
         thisTransform = GetComponent<Transform>();
         myManager = thisShipData.thisGameManager;
+        thisJoystick = GetComponent<TankController>();
         //gravityValue = 0f;
-        thisPlayerForwardSpeed = this.myManager.PlayerForwardSpeed;
-        thisPlayerBackSpeed = this.myManager.PlayerBackwardSpeed;
-        thisPlayerRotateSpeed = this.myManager.PlayerRotateSpeed;
-        thisPlayerFireSpeed = this.myManager.PlayerFireRate;
+        thisPlayerForwardSpeed = this.thisShipData.moveSpeed;
+        thisPlayerBackSpeed = this.thisShipData.moveSpeed / 2;
+        thisPlayerRotateSpeed = this.thisShipData.turnSpeed;
+        thisPlayerFireSpeed = this.thisShipData.fireRate;
 
         // this is the firing cooldown
         lastFired = Time.time;
-        thisPlayerFireSpeed *= 0.05f;
     }
 
     // Update is called once per frame
@@ -171,9 +172,10 @@ public class InputController : MonoBehaviour
 
 
         // this covers entering the changes in position onto the connected player ship
-        controlInput = thisTransform.TransformDirection(100.0f * controlInput * Time.deltaTime);
-        thisController.Move(controlInput * Time.deltaTime);
-        thisTransform.Rotate(rotateInput * 1.0f);
+        controlInput = thisTransform.TransformDirection(controlInput * Time.deltaTime * 1000.0f);
+        /// moved to controller for pawn movement
+        thisJoystick.movePawn(controlInput * Time.deltaTime);
+        thisJoystick.rotatePawn(rotateInput * Time.deltaTime * 1000.0f);
 
        
 
@@ -181,7 +183,7 @@ public class InputController : MonoBehaviour
         if (Input.GetKey(KeyCode.Space))
         {
             // code to fire the lazer if the timer is okay
-            if (Time.time - lastFired > thisPlayerFireSpeed)
+            if (Time.time - lastFired > (10.0f / thisPlayerFireSpeed))
                 {
                     thisShipData.createBullet();
                     lastFired = Time.time;

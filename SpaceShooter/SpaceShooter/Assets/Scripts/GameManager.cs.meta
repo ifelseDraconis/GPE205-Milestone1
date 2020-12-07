@@ -3,7 +3,15 @@ guid: 9896144187a48484e8816f2decd88e9a
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - playerShip: {fileID: 8801349595495064814, guid: c01a9752da51e8b4aab0ff384d4bae3f,
+      type: 3}
+  - BadGuyOne: {fileID: 3062183136018469542, guid: 32ea465ad135dfd42aa7b9a4657878e4,
+      type: 3}
+  - BadGuyTwo: {fileID: 3062183136018469542, guid: 32ea465ad135dfd42aa7b9a4657878e4,
+      type: 3}
+  - BadGuyThree: {fileID: 3062183136018469542, guid: 32ea465ad135dfd42aa7b9a4657878e4,
+      type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

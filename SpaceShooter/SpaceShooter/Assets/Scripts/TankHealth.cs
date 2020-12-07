@@ -4,30 +4,115 @@ using UnityEngine;
 
 public class TankHealth : MonoBehaviour
 {
-    public TankData thisTankData;
+    private TankData thisTankData;
 
-    private int thisTankHealth;
-    private int thisTankMaxHealth;
+    public int thisTankHealth { get; private set; }
+    public int thisTankMaxHealth { get; private set; }
+
+    private float invlTime;
+    private float invlTimeAmount;
+
+    private bool isPlayer;
+
+
+    void Awake()
+    {
+        thisTankData = GetComponent<TankData>();
+    }
 
     // Start is called before the first frame update
     void Start()
     {
-        thisTankHealth = thisTankData.thisGameManager.PlayerHealth;
-        thisTankHealth = thisTankData.thisGameManager.PlayerHealth;
+        // decides which health profile to use based off of which instance profile is implemented
+        isPlayer = false;
+        invlTime = 0.0f;
+        switch (thisTankData.thisBeast)
+        {
+            case TankData.ShipType.PlayerShip:
+                thisTankHealth = thisTankData.thisGameManager.PlayerHealth;
+                thisTankMaxHealth = thisTankHealth;
+                invlTimeAmount = thisTankData.thisGameManager.PlayerInvlTime;
+                isPlayer = true;
+                break;
+
+            case TankData.ShipType.HunterShip:
+                thisTankHealth = GameManager.thisManager.HunterHealth;
+                thisTankMaxHealth = thisTankHealth;
+                isPlayer = false;
+                break;
+
+            case TankData.ShipType.KamiKazeShip:
+                thisTankHealth = GameManager.thisManager.KamiKazeHealth;
+                thisTankMaxHealth = thisTankHealth;
+                isPlayer = false;
+                break;
+
+            case TankData.ShipType.WanderingShip:
+                thisTankHealth = GameManager.thisManager.WanderHealth;
+                thisTankMaxHealth = thisTankHealth;
+                isPlayer = false;
+                break;
+
+            case TankData.ShipType.LostShip:
+                thisTankHealth = GameManager.thisManager.LostHealth;
+                thisTankMaxHealth = thisTankHealth;
+                isPlayer = false;
+                break;
+
+            default:
+                thisTankHealth = GameManager.thisManager.LostHealth;
+                thisTankMaxHealth = thisTankHealth;
+                isPlayer = false;
+                break;
+        }
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (isPlayer)
+        {
+            if (invlTime > 0)
+            {
+                invlTime -= Time.deltaTime;
+            }
+        }
         
     }
 
     public void takeHit()
     {
-        thisTankHealth--;
-        if (thisTankHealth <= 0)
+        if (invlTime <= 0) 
         {
-            Destroy(gameObject);
+            this.thisTankHealth--;
+            if (thisTankHealth <= 0)
+            {
+                Destroy(gameObject);
+            }
+            if (isPlayer)
+            {
+                invlTime = invlTimeAmount;
+            }
+        }
+        
+    }
+
+    public void alterTankHealth(int NewHealth)
+    {
+        thisTankHealth += NewHealth;
+        if (thisTankHealth > thisTankMaxHealth)
+        {
+            thisTankHealth = thisTankMaxHealth;
+        }
+    }
+
+    public void alterTankMaxHealth(int NewMaxHealth)
+    {
+        thisTankMaxHealth = NewMaxHealth;
+        if (thisTankHealth > thisTankMaxHealth)
+        {
+            thisTankHealth = thisTankMaxHealth;
         }
     }
 }

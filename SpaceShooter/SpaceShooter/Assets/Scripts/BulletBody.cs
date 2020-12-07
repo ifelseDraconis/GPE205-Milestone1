@@ -4,39 +4,47 @@ using UnityEngine;
 
 public class BulletBody : MonoBehaviour
 {
+    public GameObject goesKaboom;
+
     private Transform thisBulletTran;
     private GameManager thisManager;
     private float thisBulletSpeed;
     private float thisBulletLifespan;
     private Collider warHead;
 
+    private GameObject myFather;
+    private Rigidbody thisRigid;
+
+
+   
     // Start is called before the first frame update
     void Start()
     {
         thisBulletTran = GetComponent<Transform>();
-        thisBulletTran.Translate(Vector3.forward * 10.0f);
 
         thisManager = GameManager.thisManager;
         thisBulletSpeed = thisManager.BulletSpeed;
         thisBulletLifespan = thisManager.BulletDuration;
 
         warHead = GetComponent<Collider>();
+        thisRigid = GetComponent<Rigidbody>();
 
         StartCoroutine(byebyeWorld());
-        StartCoroutine(sailAway());
+
+        
     }
 
     // Update is called once per frame
     void Update()
     {
         // this makes the bullet move
-        thisBulletTran.Translate(Vector3.forward * Time.deltaTime * thisBulletSpeed);
+        thisBulletTran.Translate(-thisBulletTran.forward * thisBulletSpeed * Time.deltaTime);
     }
 
     // this just sends a message that the bullet is dead
     void OnDestroy()
     {
-
+        Instantiate(goesKaboom, thisBulletTran.position, Quaternion.identity);
     }
 
     IEnumerator byebyeWorld()
@@ -44,15 +52,19 @@ public class BulletBody : MonoBehaviour
         yield return new WaitForSeconds(thisBulletLifespan);
         Destroy(gameObject);
     }
-
-    IEnumerator sailAway()
-    {
-        yield return new WaitForSeconds(0.5f);
-        warHead.isTrigger = true;
-    }
-
+    
     void OnTriggerEnter(Collider other)
     {
-        Destroy(gameObject);
+        bool doesHit = other.tag == "BlastSphere" | other.tag == "Pickups";
+        if (!doesHit)
+        {
+            Destroy(gameObject);
+        }
+        
+    }
+
+    public void thisParent(GameObject myPapa)
+    {
+        myFather = myPapa;
     }
 }

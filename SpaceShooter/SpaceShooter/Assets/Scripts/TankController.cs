@@ -4,17 +4,26 @@ using UnityEngine;
 
 public class TankController : MonoBehaviour
 {
-    public InputController thisController;
-    public AIController thisAIMaster;
+    
+    private Pawn thisPiece;
 
     void Start()
     {
-        thisController = GetComponent<InputController>();
+        thisPiece = GetComponent<Pawn>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void movePawn (Vector3 movementCommand) 
     {
-        
+        thisPiece.makeMove(movementCommand);
+    }
+
+    public void rotatePawn (Vector3 rotateCommand)
+    {
+        thisPiece.makeRotate(rotateCommand);
+    }
+
+    public void pawnRotation (Quaternion rotationUpdate)
+    {
+        thisPiece.doRotation(rotationUpdate);
     }
 }

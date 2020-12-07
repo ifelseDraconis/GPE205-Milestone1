@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1886786049549188149}
   m_LocalRotation: {x: -1.7763568e-15, y: 5.6767346e-23, z: 2.5973708e-15, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 4}
+  m_LocalPosition: {x: 0, y: 0, z: 4.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3056331525477359240}
@@ -512,7 +512,6 @@ GameObject:
   - component: {fileID: 3059470888750211816}
   - component: {fileID: 3030314866436726472}
   - component: {fileID: 3037767165195242636}
-  - component: {fileID: 3071068929858946400}
   m_Layer: 0
   m_Name: satellite
   m_TagString: Untagged
@@ -581,20 +580,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &3071068929858946400
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3061384840749324214}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 6f3171a7d7cb694438e6207398199d25, type: 3}
 --- !u!1 &3061407250499873082
 GameObject:
   m_ObjectHideFlags: 0
@@ -744,7 +729,6 @@ GameObject:
   - component: {fileID: 3059095766378042612}
   - component: {fileID: 3027210292042664734}
   - component: {fileID: 3039528486982541706}
-  - component: {fileID: 3142980577705799228}
   m_Layer: 0
   m_Name: engine 2 back part
   m_TagString: Untagged
@@ -814,20 +798,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!136 &3142980577705799228
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3061452276502718336}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5736698
-  m_Height: 1.76
-  m_Direction: 2
-  m_Center: {x: -0.00000017881393, y: 0.000000029802322, z: -0.39}
 --- !u!1 &3061466393970356364
 GameObject:
   m_ObjectHideFlags: 0
@@ -1313,7 +1283,6 @@ GameObject:
   - component: {fileID: 3059205100634598062}
   - component: {fileID: 3030093714086832510}
   - component: {fileID: 3037921107067302000}
-  - component: {fileID: 3070932975640156456}
   m_Layer: 0
   m_Name: cabin chassis
   m_TagString: Untagged
@@ -1383,20 +1352,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &3070932975640156456
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3061750065662767022}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: dbec9cf91e8a2a144a3606a3bd9c19d1, type: 3}
 --- !u!1 &3061766004550996086
 GameObject:
   m_ObjectHideFlags: 0
@@ -1774,7 +1729,6 @@ GameObject:
   - component: {fileID: 3059113706133657804}
   - component: {fileID: 3029953867931097462}
   - component: {fileID: 3039459104145661770}
-  - component: {fileID: 3141663844915179660}
   m_Layer: 0
   m_Name: engine 2 back part (1)
   m_TagString: Untagged
@@ -1844,20 +1798,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!136 &3141663844915179660
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3061956638010455198}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5736698
-  m_Height: 1.76
-  m_Direction: 2
-  m_Center: {x: -0.00000017881393, y: 0.000000029802322, z: -0.39}
 --- !u!1 &3062068025160559458
 GameObject:
   m_ObjectHideFlags: 0
@@ -2026,12 +1966,13 @@ GameObject:
   m_Component:
   - component: {fileID: 3056331525477359240}
   - component: {fileID: 3060925097057667388}
-  - component: {fileID: 3060925097057667391}
+  - component: {fileID: 7308614427385164748}
   - component: {fileID: 3060925097057667392}
   - component: {fileID: 3060925097057667395}
   - component: {fileID: 3060925097057667394}
   - component: {fileID: 3060925097057667389}
   - component: {fileID: 3060925097057667390}
+  - component: {fileID: 2327014891449753750}
   m_Layer: 0
   m_Name: ship 4
   m_TagString: BadGuy
@@ -2047,8 +1988,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3062183136018469542}
   m_LocalRotation: {x: 0, y: -0.994338, z: 0, w: 0.106264114}
-  m_LocalPosition: {x: 0, y: 0, z: 120.12}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 3059470888750211816}
   - {fileID: 3059481559766145182}
@@ -2073,15 +2014,15 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 2
-  m_Radius: 0.5
+  m_Height: 0
+  m_Radius: 3.5
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!136 &3060925097057667391
-CapsuleCollider:
+  m_Center: {x: 0, y: 0, z: -0.68}
+--- !u!65 &7308614427385164748
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2090,10 +2031,9 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 3.2
-  m_Height: 9.77
-  m_Direction: 2
-  m_Center: {x: 0, y: 0, z: -0.9}
+  serializedVersion: 2
+  m_Size: {x: 6.63, y: 1, z: 7.48}
+  m_Center: {x: 0, y: 0, z: -0.99}
 --- !u!114 &3060925097057667392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2142,7 +2082,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fce3f348f2b0da488a32df3394a38b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisBeast: 0
+  thisBeast: 2
 --- !u!114 &3060925097057667390
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2155,9 +2095,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9ae4f4240d48b84f976844835951b69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentAIChoice: 3
+  currentAIChoice: 2
   currentTravelPath: 0
-  patrolMethod: 0
+  patrolMethod: 1
+--- !u!114 &2327014891449753750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3062183136018469542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40f32525a2cf69942aa891b1525ba6be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3062219633757740362
 GameObject:
   m_ObjectHideFlags: 0

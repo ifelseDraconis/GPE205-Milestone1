@@ -6,6 +6,12 @@ TagManager:
   tags:
   - BadGuy
   - Bullet
+  - Waypoint
+  - RoomPaths
+  - SpawnLocation
+  - BlastSphere
+  - Pickups
+  - PlayerSpawner
   layers:
   - Default
   - TransparentFX
@@ -15,10 +21,10 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  - Asteroids
+  - EnemyShips
+  - PlayerShips
+  - Stations
   - 
   - 
   - 
