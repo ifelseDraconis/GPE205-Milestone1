@@ -6,6 +6,18 @@ TagManager:
   tags:
   - BadGuy
   - Bullet
+  - Waypoint
+  - RoomPaths
+  - SpawnLocation
+  - BlastSphere
+  - Pickups
+  - PlayerSpawner
+  - MasterVolumeSlider
+  - MusicVolumeSlider
+  - SFXVolumeSlider
+  - PlayerSlider
+  - DayOfWeekMod
+  - SeedNumber
   layers:
   - Default
   - TransparentFX
@@ -15,11 +27,11 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Asteroids
+  - EnemyShips
+  - PlayerShips
+  - Stations
+  - Weapons
   - 
   - 
   - 

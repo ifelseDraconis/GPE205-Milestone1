@@ -11,7 +11,7 @@ public class BlastOn : MonoBehaviour
     void Start()
     {
         thisBlast = GetComponent<Transform>();
-        thisIncrease = new Vector3(3.25f, 3.25f, 3.25f);
+        thisIncrease = new Vector3(6.0f, 6.0f, 6.0f);
         StartCoroutine(byebyeWorld());
     }
 
@@ -24,7 +24,7 @@ public class BlastOn : MonoBehaviour
 
     IEnumerator byebyeWorld()
     {
-        yield return new WaitForSeconds(1.4f);
+        yield return new WaitForSeconds(0.7f);
         Destroy(gameObject);
     }
 }

@@ -5,14 +5,13 @@ using UnityEngine;
 public class Pawn : MonoBehaviour
 {
     private CharacterController thisController;
-    private Transform thisShipTransform;
+    public Transform thisShipTransform;
 
     // Start is called before the first frame update
     void Start()
     {
-        thisController = GetComponent<CharacterController>();
-        thisShipTransform = GetComponent<Transform>();
-
+        
+        thisController = gameObject.GetComponent<CharacterController>();
     }
 
     public void makeMove(Vector3 movementAction)

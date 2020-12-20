@@ -7,7 +7,7 @@ public class InputController : MonoBehaviour
     private TankData thisShipData;
     public enum InputScheme { WASD, arrowKeys};
     public InputScheme entryMethod = InputScheme.WASD;
-    private CharacterController thisController;
+
 
     private float thisPlayerForwardSpeed;
     private float thisPlayerBackSpeed;
@@ -16,10 +16,12 @@ public class InputController : MonoBehaviour
 
     private float gravityValue;
     private GameManager myManager;
-    private Transform thisTransform;
+    public Transform thisTransform;
 
     private Vector3 controlInput;
     private Vector3 rotateInput;
+
+    private TankController thisJoystick;
 
     private float lastFired;
     private float fireRate;
@@ -28,18 +30,16 @@ public class InputController : MonoBehaviour
     void Start()
     {
         thisShipData = GetComponent<TankData>();
-        thisController = GetComponent<CharacterController>();
-        thisTransform = GetComponent<Transform>();
         myManager = thisShipData.thisGameManager;
+        thisJoystick = GetComponent<TankController>();
         //gravityValue = 0f;
-        thisPlayerForwardSpeed = this.myManager.PlayerForwardSpeed;
-        thisPlayerBackSpeed = this.myManager.PlayerBackwardSpeed;
-        thisPlayerRotateSpeed = this.myManager.PlayerRotateSpeed;
-        thisPlayerFireSpeed = this.myManager.PlayerFireRate;
+        thisPlayerForwardSpeed = this.thisShipData.moveSpeed;
+        thisPlayerBackSpeed = this.thisShipData.moveSpeed / 2;
+        thisPlayerRotateSpeed = this.thisShipData.turnSpeed;
+        thisPlayerFireSpeed = this.thisShipData.fireRate;
 
         // this is the firing cooldown
         lastFired = Time.time;
-        thisPlayerFireSpeed *= 0.05f;
     }
 
     // Update is called once per frame
@@ -76,35 +76,48 @@ public class InputController : MonoBehaviour
                 // can only go left or right
                 if (Input.GetKey(KeyCode.A))
                 {
-                    // code to go right
-                    controlInput.x = -1.0f;
+                    // code to rotate right
+                    rotateInput.y = -1.0f * thisPlayerRotateSpeed * Time.deltaTime;
                 }
                 else if (Input.GetKey(KeyCode.D))
                 {
-                    // code to go left
-                    controlInput.x = 1.0f;
-                }
-                else
-                {
-                    controlInput.x = 0f;
-                };
-
-                controlInput.x = controlInput.x * (thisPlayerForwardSpeed / 2.0f);
-
-                if (Input.GetKey(KeyCode.E))
-                {
-                    // code to turn right
+                    // code to rotate left
                     rotateInput.y = 1.0f * thisPlayerRotateSpeed * Time.deltaTime;
-                }
-                else if (Input.GetKey(KeyCode.Q))
-                {
-                    // code to turn left
-                    rotateInput.y = -1.0f * thisPlayerRotateSpeed * Time.deltaTime;
                 }
                 else
                 {
                     rotateInput.y = 0f;
                 };
+
+                // this is to fire the weapon on the ship after the other updates have finished
+                if (Input.GetKey(KeyCode.Space))
+                {
+                    // code to fire the lazer if the timer is okay
+                    if (Time.time - lastFired > (10.0f / thisPlayerFireSpeed))
+                    {
+                        thisShipData.createBullet();
+                        lastFired = Time.time;
+                    }
+
+                }
+
+                controlInput.x = controlInput.x * (thisPlayerForwardSpeed / 2.0f);
+
+                // commented out in order to allow for symmetric development
+                //if (Input.GetKey(KeyCode.E))
+                //{
+                //    // code to turn right
+                //    rotateInput.y = 1.0f * thisPlayerRotateSpeed * Time.deltaTime;
+                //}
+                //else if (Input.GetKey(KeyCode.Q))
+                //{
+                //    // code to turn left
+                //    rotateInput.y = -1.0f * thisPlayerRotateSpeed * Time.deltaTime;
+                //}
+                //else
+                //{
+                //    rotateInput.y = 0f;
+                //};
 
                 break;
 
@@ -137,56 +150,68 @@ public class InputController : MonoBehaviour
                 if (Input.GetKey(KeyCode.RightArrow))
                 {
                     // code to go right
-                    controlInput.x = -1.0f;
+                    rotateInput.y = 1.0f * thisPlayerRotateSpeed * Time.deltaTime;
                 }
                 else if (Input.GetKey(KeyCode.LeftArrow))
                 {
                     // code to go left
-                    controlInput.x = 1.0f;
-                }
-                else
-                {
-                    controlInput.x = 0f;
-                };
-
-                controlInput.x = controlInput.x * (thisPlayerForwardSpeed / 2.0f);
-
-                if (Input.GetKey(KeyCode.Keypad7))
-                {
-                    // code to turn right
-                    rotateInput.y = 1.0f * thisPlayerRotateSpeed;
-                }
-                else if (Input.GetKey(KeyCode.Keypad9))
-                {
-                    // code to turn left
-                    rotateInput.y = -1.0f * thisPlayerRotateSpeed;
+                    rotateInput.y = -1.0f * thisPlayerRotateSpeed * Time.deltaTime;
                 }
                 else
                 {
                     rotateInput.y = 0f;
                 };
+
+                if (Input.GetKey(KeyCode.KeypadEnter))
+                {
+                    // code to fire the lazer if the timer is okay
+                    if (Time.time - lastFired > (10.0f / thisPlayerFireSpeed))
+                    {
+                        thisShipData.createBullet();
+                        lastFired = Time.time;
+                    }
+
+                }
+
+                controlInput.x = controlInput.x * (thisPlayerForwardSpeed / 2.0f);
+
+                //if (Input.GetKey(KeyCode.Keypad7))
+                //{
+                //    // code to turn right
+                //    rotateInput.y = 1.0f * thisPlayerRotateSpeed;
+                //}
+                //else if (Input.GetKey(KeyCode.Keypad9))
+                //{
+                //    // code to turn left
+                //    rotateInput.y = -1.0f * thisPlayerRotateSpeed;
+                //}
+                //else
+                //{
+                //    rotateInput.y = 0f;
+                //};
                 break;
 
         }
 
 
         // this covers entering the changes in position onto the connected player ship
-        controlInput = thisTransform.TransformDirection(100.0f * controlInput * Time.deltaTime);
-        thisController.Move(controlInput * Time.deltaTime);
-        thisTransform.Rotate(rotateInput * 1.0f);
+        /// moved to controller for pawn movement
+        thisJoystick.movePawn(thisTransform.TransformDirection(controlInput) * Time.deltaTime);
+        thisJoystick.rotatePawn(rotateInput * Time.deltaTime * 100.0f);
 
        
 
-        // this is to fire the weapon on the ship after the other updates have finished
-        if (Input.GetKey(KeyCode.Space))
+        
+
+        // this is just for debugging and proving purposes
+        if (Input.GetKeyDown(KeyCode.L))
         {
-            // code to fire the lazer if the timer is okay
-            if (Time.time - lastFired > thisPlayerFireSpeed)
-                {
-                    thisShipData.createBullet();
-                    lastFired = Time.time;
-                }
-            
+            myManager.PlayerScore += 200;
+        }
+
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            myManager.RespawnPlayer();
         }
     }
 }

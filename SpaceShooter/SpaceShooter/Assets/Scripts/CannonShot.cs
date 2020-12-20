@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 public class CannonShot : MonoBehaviour
 {
     private Transform thisCannon;
     private bool makeShot;
+    public AudioClip thisShot;
 
     public GameObject myBulletShot;
     // Start is called before the first frame update
@@ -29,6 +31,7 @@ public class CannonShot : MonoBehaviour
             GameObject thisBullet;
             thisBullet = Instantiate(myBulletShot, thisCannon.position, thisCannon.rotation) as GameObject;
             thisBullet.transform.Rotate(Vector3.left * 90);
+            AudioSource.PlayClipAtPoint(thisShot, thisCannon.position);
 
             Rigidbody thisTempRigid;
             thisTempRigid = thisBullet.GetComponent<Rigidbody>();
